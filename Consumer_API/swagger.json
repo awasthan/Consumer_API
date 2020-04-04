@@ -1,0 +1,66 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Consumer_API",
+    "version" : "1.0.0",
+    "description" : "Consumer_API"
+  },
+  "paths" : {
+    "/readMessage" : {
+      "post" : {
+        "operationId" : "postReadMessage",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "$ref" : "#/definitions/response"
+            }
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a readMessage",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "$ref" : "#/definitions/readMessage"
+          },
+          "description" : "readMessage",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/consumer_api/v1",
+  "definitions" : {
+    "readMessage" : {
+      "type" : "object",
+      "properties" : {
+        "Topic" : {
+          "type" : "string"
+        },
+        "partitionNo" : {
+          "type" : "integer"
+        },
+        "offset" : {
+          "type" : "number"
+        }
+      }
+    },
+    "response" : {
+      "type" : "object",
+      "properties" : {
+        "date" : {
+          "type" : "integer"
+        },
+        "time" : {
+          "type" : "integer"
+        },
+        "temp" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}
