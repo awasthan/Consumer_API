@@ -13,7 +13,7 @@
         <translation xmi:type="utility:TranslatableString" key="Output" bundleName="postReadMessage" pluginId="Consumer_API"/>
       </nodes>
       <nodes xmi:type="com_ibm_connector_kafka_ComIbmRequest.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="152,70" connectorName="Kafka" topicName="test-topic" bootstrapServers="dummy" partitionNumber="0" offset="0" notFoundAction="no match" clientId="ac-producer" useClientIdSuffix="false" connectionTimeout="60" outputDataLocation="$OutputRoot" resultDataLocation="$ResultRoot" copyLocalEnvironment="true" securityIdentity="myKafkaSecId" securityProtocol="SASL_SSL" sslProtocol="TLSv1.2"
-          messageDomainProperty="JSON" validateTiming="deferred" parserXmlnscBuildTreeUsingXMLSchema="false" parserXmlnscUseForXmlnsDomain="false" parserXmlnscMixedContentRetainMode="none" parserXmlnscCommentsRetainMode="none" parserXmlnscProcessingInstructionsRetainMode="none" validateMaster="none" validateFailureAction="exception">
+          messageDomainProperty="JSON" validateTiming="deferred" parserXmlnscBuildTreeUsingXMLSchema="false" parserXmlnscUseForXmlnsDomain="false" parserXmlnscMixedContentRetainMode="none" parserXmlnscCommentsRetainMode="none" parserXmlnscProcessingInstructionsRetainMode="none" validateMaster="none" validateFailureAction="exception" policyUrl="{Kafka.policy}:Kafka_Consumer">
         <translation xmi:type="utility:ConstantString" string="Kafka Read"/>
       </nodes>
       <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="-4,148" computeExpression="esql://routine/#createReadRequest_Compute.Main" computeMode="destinationAndMessage">

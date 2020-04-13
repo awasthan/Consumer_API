@@ -3,6 +3,7 @@
 	<name>Consumer_API</name>
 	<comment></comment>
 	<projects>
+		<project>Kafka.policy</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
