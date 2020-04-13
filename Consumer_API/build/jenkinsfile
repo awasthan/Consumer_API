@@ -6,8 +6,7 @@ node () {
   wrap([$class: 'Xvfb']) {
 	stage ('Consumer_API - Checkout') {
  	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'jenkins-github', url: 'https://github.com/awasthan/Consumer_API.git']]]) 
-	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'jenkins-github', url: 'https://github.com/awasthan/Kafka.policy.git']]]) 
-	}
+	 }
 	stage ('Consumer_API - Build') {
  	
 sh """ 
