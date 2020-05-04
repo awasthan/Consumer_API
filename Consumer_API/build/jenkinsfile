@@ -22,6 +22,5 @@ sshagent (credentials: ['jenkins-gihub']) {
     sh('git push git@github.com:awasthan/Consumer_API.git --tags')
 }
 }
-cleanWs()
 }
 }
