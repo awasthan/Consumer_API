@@ -73,8 +73,8 @@
 		
 	</distributionManagement>
 	<scm>
-		<url>git@github.ibm.com:anand-awasthi/Consumer_API.git</url>
-		<connection>scm:git:git@github.ibm.com:anand-awasthi/Consumer_API.git</connection>
+		<url>git@github.com:awasthan/Consumer_API.git</url>
+		<connection>scm:git:git@github.com:awasthan/Consumer_API.git</connection>
 	  <tag>HEAD</tag>
   </scm>	
 </project>
